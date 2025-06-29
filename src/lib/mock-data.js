@@ -92,11 +92,32 @@ export const mockDoctors = [
     },
   ]
   
-  export const mockUser = {
-    name: "Priya Gupta",
-    lastVisit: "July 20, 2024",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b002?w=150&h=150&fit=crop&crop=face",
-    patientId: "PAT-IND-12345",
-    location: "New Delhi, India",
+  export const mockMessages = [
+  {
+    id: 1,
+    text: "Hello Doctor, I have some questions about my recent test results.",
+    sender: "user",
+    time: "10:30 AM"
+  },
+  {
+    id: 2,
+    text: "Hi! I'd be happy to help you understand your results. What specific questions do you have?",
+    sender: "doctor",
+    time: "10:32 AM"
+  },
+  {
+    id: 3,
+    text: "I noticed some values were highlighted. Should I be concerned?",
+    sender: "user",
+    time: "10:35 AM"
   }
+];
+
+export const mockUser = {
+  name: "Priya Gupta",
+  lastVisit: "July 20, 2024",
+  avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b002?w=150&h=150&fit=crop&crop=face",
+  patientId: "PAT-IND-12345",
+  location: "New Delhi, India",
+}
   
