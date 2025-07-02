@@ -19,6 +19,8 @@ const messageRoutes = require('./routes/messages');
 const videoCallRoutes = require('./routes/videoCalls');
 const paymentRoutes = require('./routes/payments');
 const adminRoutes = require('./routes/admin');
+const healthAssessmentRoutes = require('./routes/healthAssessment');
+const wellnessRoutes = require('./routes/wellness');
 
 // Import middleware
 const authMiddleware = require('./middleware/auth');
@@ -100,6 +102,8 @@ app.use('/api/messages', authMiddleware, messageRoutes);
 app.use('/api/video-calls', authMiddleware, videoCallRoutes);
 app.use('/api/payments', authMiddleware, paymentRoutes);
 app.use('/api/admin', authMiddleware, adminRoutes);
+app.use('/api/health-assessment', healthAssessmentRoutes);
+app.use('/api/wellness', wellnessRoutes);
 
 // 404 handler
 app.use('*', (req, res) => {
